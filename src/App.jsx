@@ -5,6 +5,9 @@ import HeroSection from './components/HeroSection';
 import CategoriesSection from './components/CategoriesSection';
 import BananaChipsSection from './components/BananaChipsSection'; 
 import JackfruitChipsSection from './components/JackfruitChipsSection'; 
+import WhyChooseUs from './components/WhyChooseUs';
+import ExploreSection from './components/ExploreSection'; // Assuming you have this component 
+import Footer from './components/Footer'; // Assuming you have a Footer component
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <CategoriesSection />
       <BananaChipsSection />
       <JackfruitChipsSection />
+      <WhyChooseUs /> 
+      <ExploreSection />
+      <Footer />
       {/* Add more sections as needed */}
       {/* More sections can follow */}
     </div>

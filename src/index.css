@@ -81,7 +81,7 @@ body {
 }
 
 .category-card:hover {
-  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -123,4 +123,11 @@ body {
 .product-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* why choose us */
+/* in your index.css or component-specific CSS */
+.feature-icon:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
