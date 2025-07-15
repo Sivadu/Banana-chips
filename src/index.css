@@ -1,0 +1,126 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+ color-scheme: light dark;
+color: rgba(255, 255, 255, 0.87);  /* White text */
+background-color: #ffdb8c;         /* Light background */
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  padding-top: 80px; /* Adjust depending on your navbar height */
+}
+
+/* Navbar */
+/* Remove nav item dots and spacing issues */
+.navbar-nav {
+  list-style: none;
+  margin-bottom: 0;
+}
+.navbar-nav .nav-link {
+  font-size: 14px !important; /* add !important if Bootstrap overrides */
+}
+
+/* Link Hover */
+.custom-link:hover {
+  color: orange !important;
+  border-bottom: 2px solid orange;
+}
+
+/* Custom Order Now Button */
+.custom-orange-btn {
+  background-color: orange;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.custom-orange-btn:hover {
+  background-color: darkorange;
+  color: white;
+}
+
+/* Optional: reduce font size on small devices */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
+/*  Hero Section */
+.hero-section {
+  background-color: #fff0db;
+}
+
+.text-orange {
+  color: #e69500;
+}
+
+.btn-warning {
+  background-color: orange;
+  border-color: orange;
+}
+
+.btn-warning:hover {
+  background-color: darkorange;
+  border-color: darkorange;
+}
+
+/* CategoriesSection */
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+}
+
+.category-title {
+  color: #4A2C0A; /* Deep brown */
+}
+
+.category-subtitle {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* BananaChipsSection */
+/* Chip card hover effect */
+.chip-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.chip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .btn:hover {
+  background-color: #e69500 !important;
+}
+
+/* JackfruitChipsSection */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.1);
+}
