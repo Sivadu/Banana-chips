@@ -18,15 +18,16 @@ const CategoriesSection = () => {
 
         <div className="row g-4 justify-content-center">
           {categories.map((cat, index) => (
-            <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={index}>
-              <div className="bg-white p-3 rounded-4 h-100">
-                <div style={{ fontSize: '2rem' }}>{cat.icon}</div>
-                <h6 className="fw-bold mt-2">{cat.title}</h6>
-                <p className="text-muted small">{cat.subtitle}</p>
-              </div>
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={index}>
+          <div className="category-card bg-white p-3 rounded-4 h-100">
+         <div className="category-icon">{cat.icon}</div>
+         <h6 className="fw-bold mt-2 category-title">{cat.title}</h6>
+          <p className="category-subtitle">{cat.subtitle}</p>
             </div>
-          ))}
-        </div>
+         </div>
+       ))}
+       </div>
+
       </div>
     </section>
   );
