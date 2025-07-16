@@ -131,3 +131,7 @@ body {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+/* flavors page  */
+/* src/index.css */
+.hover-raise { transition: transform .25s, box-shadow .25s; cursor:pointer; }
+.hover-raise:hover { transform: translateY(-6px); box-shadow:0 8px 18px rgba(0,0,0,.08); }

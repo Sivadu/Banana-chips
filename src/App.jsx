@@ -1,29 +1,29 @@
-import React from 'react';
-import './index.css'; // or whatever your filename is
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'; 
 import HeroSection from './components/HeroSection';
-import CategoriesSection from './components/CategoriesSection';
-import BananaChipsSection from './components/BananaChipsSection'; 
-import JackfruitChipsSection from './components/JackfruitChipsSection'; 
-import WhyChooseUs from './components/WhyChooseUs';
-import ExploreSection from './components/ExploreSection'; // Assuming you have this component 
-import Footer from './components/Footer'; // Assuming you have a Footer component
+import HomePage from './pages/HomePage';
+import FlavoursPage from './pages/FlavoursPage';
+import CategoryDetailPage from "./pages/CategoryDetailPage";
+import OurStoryPage from './pages/OurStoryPage';
+import ContactPage from './pages/ContactPage';
+import FeedbackPage from './pages/FeedbackPage';  
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <HeroSection />
-      <CategoriesSection />
-      <BananaChipsSection />
-      <JackfruitChipsSection />
-      <WhyChooseUs /> 
-      <ExploreSection />
-      <Footer />
-      {/* Add more sections as needed */}
-      {/* More sections can follow */}
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/flavours" element={<FlavoursPage />} />
+        <Route path="/categories" element={<FlavoursPage />} />
+        <Route path="/flavours/:category" element={<CategoryDetailPage />} /> {/* detail page */}
+        <Route path="/ourstory" element={<OurStoryPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/feedback" element={<FeedbackPage />} />
+        <Route path="/ourstory" element={<OurStoryPage />} />
+        <Route path="/feedback" element={<FeedbackPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
